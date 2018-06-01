@@ -1,0 +1,343 @@
+<!DOCTPYE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5267">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/beyond.jpg" type="image/x-icon" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/54_anime_animate.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/54_anime_magnific-popup.css">
+    <!-- Salvattore -->
+    <link rel="stylesheet" href="css/54_anime_salvattore.css">
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/54_anime_style.css">
+    <!-- Modernizr JS -->
+    <script src="js/54_anime_modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/54_anime_respond.min.js"></script>
+    <![endif]-->
+    <!-- 上面的meta必须放在最前面!!! -->
+    <meta name="author" content="beyond">
+    <meta name="description" content="未闻花名(vwhm.net)-定制妳的专属收藏">
+    <meta name="keywords" content="HTML,CSS,JAVASCRIPT,JQUERY,XML,JSON,C,C++,C#,OC,PHP,JAVA,JSP,PYTHON,RUBY,PERL,LUA,SQL,LINUX,SHELL,汇编,日语,英语,泰语,韩语,俄语,粤语,阿语,魔方,乐理,动漫,PR,PS,AI,AE">
+    <title>私人定制-生词本</title>
+    <link rel="icon" href="beyond.jpg" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/beyondbasestylewhite5.css">
+    <script type="text/javascript" src="js/nslog.js"></script>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+        <script src="//apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+        <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js">
+        </script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/node_52_v337_bootstrap_backup.css">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+    <!-- <script type="text/javascript" src="js/54_english.js"></script> -->
+    <style type="text/css">
+    .class_a_timer {
+        padding-left: 50px;
+        background: url(timer_150.png) left center no-repeat;
+        background-size: 28px 28px;
+    }
+    /*文字颜色*/
+
+    .class_blue_text {
+        color: rgb(70, 176, 242);
+    }
+    /*html,body,div{overflow:hidden;overflow-y:auto;}*/
+    </style>
+</head>
+
+<body>
+    <!-- 回到顶部 -->
+    <a href="#top">
+        <div style="border-radius:5px;font-size:16px;width:40px;height:50px;z-index:100;position:fixed;right:3px;bottom:3px;background:rgba(212,212,212,0.5);text-align:center;margin-right:7px;">
+            <span style="font-weight:normal;color:rgb(70,176,242);">回到顶部</span>
+        </div>
+    </a>
+    <!-- 第3步, vue最终渲染结果的容器 -->
+    <div v-cloak id="id_div_vue">
+
+
+
+        
+
+
+        <div style="border-radius:5px;font-size:16px;width:40px;height:50px;z-index:100;position:fixed;right:3px;top:3px;background:rgba(212,212,212,0.5);text-align:center;margin-right:7px;">
+            <span style="font-weight:normal;color:rgb(70,176,242);" id="id_span_mode">复习</span>
+            <img id="id_img_switch"  src="on_alipay.png" width="32px" />
+        </div>
+
+
+
+        <h2 style="color:white;text-shadow:2px 2px 4px #000;letter-spacing:5px;" class="sgcontentcolor sgcenter">  
+            定制-妳的收藏
+    </h2>
+        <nav aria-label="..." style="padding-left:9px;padding-right:9px;">
+            <ul class="pager">
+                <li v-show="currentPage > 1" class="previous"><a href="javascript:void(0)" v-on:click="previousPageBtnClicked" style="font-weight:normal;color:rgb(70,176,242);"><span aria-hidden="true">&larr;</span >前</a></li>
+                <li class="disabled"><a class="class_a_timer" style="border:0px solid rgba(255,0,0,0.15);">&nbsp;「<span class="class_blue_text" style="font-weight:bold;">{{minute}}</span>分<span class="class_blue_text" style="font-weight:bold;">{{second}}</span>秒」共<span class="class_blue_text" style="font-weight:bold;">{{animeArr.length}}</span>个</a></li>
+                <li v-show="currentPage <= (animeArr.length/pageCount - 1)" class="next"><a href="javascript:void(0)" v-on:click="nextPageBtnClicked" style="font-weight:normal;color:rgb(70,176,242);">后<span aria-hidden="true">&rarr;</span></a></li>
+            </ul>
+        </nav>
+        <div id="fh5co-main" style="margin-top:-80px;">
+            <div class="container">
+                <div class="row">
+                    <div id="fh5co-board" data-columns>
+                        <div style="-moz-box-shadow:0 2px 4px rgba(0, 0, 0, 0.17);-webkit-box-shadow:0 2px 4px rgba(0, 0, 0, 0.17);box-shadow:0 2px 4px rgba(0, 0, 0, 0.17);" class="item" v-for="(anime,i) in filterAnimeArr">
+                            <div class="animate-box class_div_animate">
+                                <a :href="anime.imgurl" class="image-popup fh5co-board-img" :title="anime.content"><img :src="anime.imgurl" :alt="anime.content"></a>
+                            </div>
+                            <div class="fh5co-desc">
+                                <span style="color:rgb(115,112,104);">No.{{anime.id}}_<span style="color:red;">{{anime.wrongCount}}</span>:<span style="color:rgb(70,176,242);">{{anime.rightCount}}</span>&nbsp;</span>
+                                <!-- <a style="font-weight:normal;color:rgb(115,112,104);display:inline;padding:5px; border:1px solid rgb(115,112,104);border-radius:5px;" href="#">朗读</a>&nbsp;&nbsp;&nbsp;&nbsp; -->
+                                <a style="font-weight:normal;color:rgb(115,112,104);display:inline; border:1px solid rgb(70,176,242);padding:5px;border-radius:5px;" href="javascript:void(0)" v-on:click="topBtnClicked(i,anime)">陌生</a>&nbsp;&nbsp;
+
+                                <a v-show="!isTestMode" style="font-weight:normal;color:rgb(115,112,104);display:inline; border:1px solid rgb(70,176,242);padding:5px;border-radius:5px;" href="javascript:void(0)" v-on:click="bottomBtnClicked(i,anime)">熟悉</a>&nbsp;&nbsp;
+                                <a style="font-weight:normal; color:rgb(115,112,104);display:inline;padding:5px; border:1px solid rgb(206,60,62);border-radius:5px;" href="javascript:void(0)" v-on:click="deleteBtnClicked(i,anime)">删除</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p v-on:click="calcResultFunction" class="sgcenter class_blue_text">计算正确率</p>
+    </div>
+    <footer id="copyright" style="margin-top:16px;">
+        <p style="font-size:14px;text-align:center;font-style:italic;">
+            Copyright © <a id="author">2018</a> Powered by <a id="author">beyond</a>
+        </p>
+    </footer>
+    <!-- 第1步,导入vue.js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script type="text/javascript" src="js/54_anime.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // 切换 学习模式 与 做题模式
+        $('#id_img_switch').click(function() {
+            if ($(this).attr('src') === 'on_alipay.png') {
+                // 改成微信
+                $('#id_img_code').attr('src', 'http://wx2.sinaimg.cn/large/ce98cd4cly1frd80xatlaj20go0godgm.jpg')
+                $(this).attr('src', 'on_weixin.png')
+                $('#id_span_mode').html('测试')
+                $('#id_span_mode').css('color','rgb(206,60,62)')
+                window.appVue.isTestMode = true
+                // 测试的时候,不需要动画
+                $('.class_div_animate').addClass('animate-box')
+                $('.class_div_animate').addClass('animated')
+                $('.class_div_animate').addClass('bounceIn')
+                
+            } else {
+                // 改成支付宝
+                $('#id_img_code').attr('src', 'http://wx1.sinaimg.cn/large/ce98cd4cly1frd80pk711j20go0gomxv.jpg')
+                $(this).attr('src', 'on_alipay.png')
+                $('#id_span_mode').html('复习')
+                $('#id_span_mode').css('color','rgb(70, 176, 242)')
+                window.appVue.isTestMode = false
+                // 复习的时候,才需要动画
+                $('.class_div_animate').removeClass('animate-box')
+                $('.class_div_animate').removeClass('animated')
+                $('.class_div_animate').removeClass('bounceIn')
+
+            }
+        })
+    })
+
+
+
+
+
+
+
+
+
+
+    // 1.从本地取
+    var version = 'v1.08'
+    var pageNo = 1
+    var local_animeArr_key = 'key_local_animeArr' + '_' + version + '_' + pageNo
+    var localAnimeArrStr = window.localStorage.getItem(local_animeArr_key)
+    var tempArr = JSON.parse(localAnimeArrStr || '[]')
+    if (tempArr.length === 0) {
+        // 如果本地没有,就从 js文件获取
+        window.animeArr = JSON.parse(jsonStr)
+        NSLog('来自js')
+    } else {
+        // 如果本地有,就用本地的
+        window.animeArr = tempArr
+        NSLog('来自本地')
+    }
+    // 2.从本地取
+    var local_roundCount_key = 'key_local_roundCount' + '_' + pageNo
+    var localRoundCount = window.localStorage.getItem(local_roundCount_key)
+    NSLog('本地: ' + localRoundCount)
+    if (localRoundCount === null) {
+        window.roundCount = 1
+    } else {
+        window.roundCount = (localRoundCount - 0) + 1
+    }
+
+
+
+    var appVue = new Vue({
+        el: '#id_div_vue',
+        data: {
+            // 御坂9982号
+            girlCount: 9982,
+            animeArr,
+            // 第几轮
+            roundCount,
+            // 用时分
+            minute: 0,
+            // 用时秒
+            second: 0,
+            // 错误数TopBtn点击次数
+            wrongCount: 0,
+            // 正确数BottomBtn点击次数
+            rightCount: 0,
+            // 学习模式,还是,测试模式
+            isTestMode: false,
+            // 当前页码数(150条一页)
+            currentPage: 1,
+            pageCount: 150
+        },
+        created: function() {
+            // 创建时,开始计时
+            window.timer = setInterval(function() {
+                window.appVue.second += 1
+                if (window.appVue.second > 59) {
+                    window.appVue.second = 0
+                    window.appVue.minute += 1
+                }
+                // NSLog(window.appVue.second)
+            }, 1000)
+        },
+        // 计算属性
+        computed: {
+            filterAnimeArr: function() {
+                // 先去掉删除的, 只留下未删除的
+                var tmpArr = this.animeArr.filter(item => item.isDelete === 0)
+                // 根据页码数currentPage * pageCount,取出前面的
+                // 1:   1-150
+                // 2:   151-300
+                var tempArr2 = tmpArr.filter(item => (item.id <= this.currentPage * this.pageCount)&&(item.id >= ((this.currentPage-1)*this.pageCount + 1)))
+                return tempArr2
+            }
+        },
+        methods: {
+            // 删除按钮点击
+            deleteBtnClicked(i,anime) {
+                if (!window.confirm('确定删除吗?')) {
+                    return
+                }
+                // 删除时,置标记flag
+                anime.isDelete = 1
+                this.filterAnimeArr.splice(i, 1)
+            },
+            // 顶置按钮点击
+            topBtnClicked(i, item) {
+                if (i === 0) return
+                // 答错数目 + 1
+                this.wrongCount += 1
+                // 该生词的总答对数目 + 1
+                item.wrongCount += 1
+                // 1. 删除
+                this.filterAnimeArr.splice(i, 1)
+                // 2. 插入到最前面
+                this.filterAnimeArr.unshift(item)
+            },
+            // 置底按钮点击
+            bottomBtnClicked(i, item) {
+                if (i === this.filterAnimeArr.length - 1) return
+                this.rightCount += 1
+                // 该生词的总答对数目 + 1
+                item.rightCount += 1
+                // 如果该生词总的答对(置底)次数超过8次
+                NSLog('答对: ' + item.rightCount)
+                if (item.rightCount >= 10) {
+                    item.isDelete = 1
+                }
+                // 1. 删除(不能直接删除)
+                this.filterAnimeArr.splice(i, 1)
+                // item.imgurl = 'menma.png'
+                // 2. 插入到最前面
+                this.filterAnimeArr.push(item)
+            },
+            // 计算正确率
+            calcResultFunction() {
+                // 获取顶置数(错误数)
+                var result = this.wrongCount * 100 / this.filterAnimeArr.length
+                NSLog(result)
+                if (result !== 0) {
+                    // 记录学习的轮次
+                    window.localStorage.setItem(local_roundCount_key, this.roundCount)
+                }
+                var resultFix = Math.round(100 - result) + '%'
+                NSLog(resultFix)
+                var message = `第${this.roundCount}回合,过招${this.filterAnimeArr.length}个收藏の词,用时${this.minute}分${this.second}秒,猜错${this.wrongCount}个,正确率${resultFix}`
+                window.alert(message)
+            },
+            // 下一页按钮点击
+            nextPageBtnClicked() {
+                this.currentPage += 1
+                // 因为换页了,所以重新取一下
+                let local_roundCount_key = 'key_local_roundCount' + '_' + pageNo
+                var tmpRoundCount = window.localStorage.getItem(local_roundCount_key)
+                if (tmpRoundCount === null ) {
+                    window.roundCount = 1
+                }else{
+                    window.roundCount = tmpRoundCount - 0
+                }
+            },
+            // 上一页按钮点击
+            previousPageBtnClicked() {
+                this.currentPage -= 1
+                // 因为换页了,所以重新取一下
+                let local_roundCount_key = 'key_local_roundCount' + '_' + pageNo
+                var tmpRoundCount = window.localStorage.getItem(local_roundCount_key)
+                if (tmpRoundCount === null ) {
+                    window.roundCount = 1
+                }else{
+                    window.roundCount = tmpRoundCount - 0
+                }
+            }
+
+        },
+        watch: {
+            animeArr: {
+                // 立即保存
+                immediate: true,
+                // 深度监视
+                deep: true,
+                // 事件
+                handler: function(newValue, oldValue) {
+                    window.localStorage.setItem(window.local_animeArr_key, JSON.stringify(newValue))
+                }
+
+            }
+        }
+    })
+    window.appVue = appVue
+    </script>
+    <!-- jQuery Easing -->
+    <script src="js/54_anime_jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <!-- Waypoints -->
+    <script src="js/54_anime_jquery.waypoints.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="js/54_anime_jquery.magnific-popup.min.js"></script>
+    <!-- Salvattore -->
+    <script src="js/54_anime_salvattore.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/54_anime_main.js"></script>
+</body>
+
+</html>

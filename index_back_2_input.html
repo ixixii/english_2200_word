@@ -1,0 +1,487 @@
+<!DOCTPYE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5267">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/beyond.jpg" type="image/x-icon" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/54_anime_animate.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/54_anime_magnific-popup.css">
+    <!-- Salvattore -->
+    <link rel="stylesheet" href="css/54_anime_salvattore.css">
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/54_anime_style.css">
+    <!-- Modernizr JS -->
+    <script src="js/54_anime_modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/54_anime_respond.min.js"></script>
+    <![endif]-->
+    <!-- 上面的meta必须放在最前面!!! -->
+    <meta name="author" content="beyond">
+    <meta name="description" content="未闻花名(vwhm.net)-定制妳的专属收藏">
+    <meta name="keywords" content="HTML,CSS,JAVASCRIPT,JQUERY,XML,JSON,C,C++,C#,OC,PHP,JAVA,JSP,PYTHON,RUBY,PERL,LUA,SQL,LINUX,SHELL,汇编,日语,英语,泰语,韩语,俄语,粤语,阿语,魔方,乐理,动漫,PR,PS,AI,AE">
+    <title>私人定制-生词本</title>
+    <link rel="icon" href="beyond.jpg" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/beyondbasestylewhite5.css">
+    <script type="text/javascript" src="js/nslog.js"></script>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+        <script src="//apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+        <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js">
+        </script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/node_52_v337_bootstrap_backup.css">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+    <!-- <script type="text/javascript" src="js/54_english.js"></script> -->
+    <style type="text/css">
+    .class_a_timer {
+        padding-left: 50px;
+        background: url(timer_150.png) left center no-repeat;
+        background-size: 28px 28px;
+    }
+    /*文字颜色*/
+
+    .class_blue_text {
+        color: rgb(70, 176, 242);
+    }
+    /*html,body,div{overflow:hidden;overflow-y:auto;}*/
+
+    .pagination>li>a {
+        color: rgb(70, 176, 242);
+    }
+
+    .pagination>.active>a {
+        background-color: rgb(70, 176, 242);
+        border-color: rgb(70, 176, 242);
+    }
+    </style>
+    <!-- element-ui第1步 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- <link rel="stylesheet" href="./css/element-ui.css"> -->
+</head>
+
+<body>
+    <!-- 回到顶部 -->
+    <a href="#top">
+        <div style="border-radius:5px;font-size:16px;width:40px;height:50px;z-index:100;position:fixed;right:3px;bottom:3px;background:rgba(212,212,212,0.5);text-align:center;margin-right:7px;">
+            <span style="font-weight:normal;color:rgb(206,60,62);">回到顶部</span>
+        </div>
+    </a>
+    <!-- 第3步, vue最终渲染结果的容器 -->
+    <div v-cloak id="id_div_vue">
+        <div style="border-radius:5px;font-size:16px;width:40px;height:50px;z-index:100;position:fixed;right:3px;top:3px;background:rgba(212,212,212,0.5);text-align:center;margin-right:7px;">
+            <span style="font-weight:normal;color:rgb(70,176,242);" id="id_span_mode">复习</span>
+            <img id="id_img_switch" src="on_alipay.png" width="32px" />
+        </div>
+        <h3 style="color:white;text-shadow:2px 2px 4px #000;letter-spacing:5px;" class="sgcontentcolor sgcenter">  
+            定制-妳的收藏
+    </h3>
+
+        <!-- <nav aria-label="Page navigation" style="text-align:center;margin-left:20px;margin-right:8px;margin-top:-20px;">
+            <ul class="pagination pagination-sm">
+                <li v-bind:class="{'disabled':currentPage === 1}">
+                    <a href="javascript:void(0)" aria-label="Previous" v-on:click="previousPageBtnClicked">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+                </li>
+                <li v-for="i in 22" v-bind:class="{'active':i === currentPage}"><a href="javascript:void(0)" v-on:click="jumpToPageBtnClicked(i)">{{i}}</a></li>
+                <li v-show="currentPage < window.dbArr.length">
+                    <a href="javascript:void(0)" aria-label="Next" v-on:click="nextPageBtnClicked">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+                </li>
+            </ul>
+        </nav> -->
+
+
+
+
+<div class="block" style="text-align:center;overflow:hidden;">
+            
+            <el-pagination @current-change="handleCurrentChange" :current-page.sync="(currentPage)" :page-size="100" layout="pager" :total="2200">
+            </el-pagination>
+        </div>
+
+
+
+        <video id="id_video" style="width:1%" controls >
+          <source src="media/premiere_01.flv" type="video/mp4">
+          <source src="media/premiere_01.flv" type="video/ogg">
+          <source src="media/premiere_01.flv" type="video/webm">
+          <object data="media/premiere_01.flv" width="300" height="300">
+            <embed src="media/premiere_01.flv" width="300" height="300" />
+          </object> 
+        </video>
+
+
+
+        <nav aria-label="..." style="padding-left:9px;padding-right:9px;margin-top:-20px;">
+            <ul class="pager">
+                <!-- <li v-show="currentPage > 0" class="previous"><a href="javascript:void(0)" v-on:click="previousPageBtnClicked" style="font-weight:normal;color:rgb(70,176,242);"><span aria-hidden="true">&larr;</span >前</a></li> -->
+
+
+                <li class="disabled"><a class="class_a_timer" style="border:0px solid rgba(255,0,0,0.15);">&nbsp;「<span class="class_blue_text" style="font-weight:bold;">{{minute}}</span>分<span class="class_blue_text" style="font-weight:bold;">{{second}}</span>秒」第<span class="class_blue_text" style="font-weight:bold;">{{currentPage}}</span>页,第<span class="class_blue_text" style="font-weight:bold;">{{window.roundCount}}</span>回合,复习<span class="class_blue_text" style="font-weight:bold;">{{animeArr.length}}</span>生词</a></li>
+                
+                <!-- <li v-show="currentPage < window.dbArr.length - 1" class="next"><a href="javascript:void(0)" v-on:click="nextPageBtnClicked" style="font-weight:normal;color:rgb(70,176,242);">后<span aria-hidden="true">&rarr;</span></a></li> -->
+
+            </ul>
+        </nav>
+        <div id="fh5co-main" style="margin-top:-90px;">
+            <div class="container">
+                <div class="row">
+                    <div id="fh5co-board" data-columns>
+                        <div style="-moz-box-shadow:0 2px 4px rgba(0, 0, 0, 0.17);-webkit-box-shadow:0 2px 4px rgba(0, 0, 0, 0.17);box-shadow:0 2px 4px rgba(0, 0, 0, 0.17);" class="item" v-for="(anime,i) in filterAnimeArr">
+                    <!-- 监听键盘点击,tab,next自动获取焦点 -->
+                            <input style="margin-left:13px;width:250px;color:red;font-size:24px;font-weight:bold;" type="text" v-model="anime.title" v-on:keyup.enter="enterBtnClicked(i,anime)"/>
+                            <div class="animate-box class_div_animate">
+                                <a :href="anime.imgurl" class="image-popup fh5co-board-img" :title="anime.content"><img :src="anime.imgurl" :alt="anime.content"></a>
+                            </div>
+                            <div class="fh5co-desc">
+                                <span style="color:rgb(115,112,104);">No.{{i+1}}_<span style="color:rgb(206,60,62);">{{anime.wrongCount}}×</span> &nbsp;&nbsp;
+                                </span>
+                                <!-- <a style="font-weight:normal;color:rgb(115,112,104);display:inline;padding:5px; border:1px solid rgb(115,112,104);border-radius:5px;" href="#">朗读</a>&nbsp;&nbsp;&nbsp;&nbsp; -->
+                                
+                                <a style="font-weight:normal;color:rgb(115,112,104);display:inline; border:1px solid rgb(70,176,242);padding:5px;border-radius:5px;" href="javascript:void(0)" v-on:click="topBtnClicked(i,anime)">陌生</a>&nbsp;&nbsp;
+                                <a style="font-weight:normal;color:rgb(115,112,104);display:inline; border:1px solid rgb(70,176,242);padding:5px;border-radius:5px;" href="javascript:void(0)" v-on:click="bottomBtnClicked(i,anime)">熟悉</a>&nbsp;&nbsp;
+
+                                <!-- <a style="font-weight:normal; color:rgb(115,112,104);display:inline;padding:5px; border:1px solid rgb(206,60,62);border-radius:5px;" href="javascript:void(0)" v-on:click="deleteBtnClicked(i)">删除</a> -->
+
+
+                                <a style="font-weight:normal; color:rgb(115,112,104);display:inline;padding:5px; border:1px solid rgb(206,60,62);border-radius:5px;" href="javascript:void(0)" v-on:click="readBtnClicked(i)">朗读</a>
+
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p v-on:click="calcResultFunction" class="sgcenter class_blue_text">计算正确率  tittle个数: {{ titleOkCount }} </p>
+        
+    </div>
+    <footer id="copyright" style="margin-top:16px;">
+        <p style="font-size:14px;text-align:center;font-style:italic;">
+            Copyright © <a id="author">2018</a> Powered by <a id="author">beyond</a>
+        </p>
+    </footer>
+    <!-- 第1步,导入vue.js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script type="text/javascript" src="js/54_anime.js"></script>
+    <!-- element-ui第2步, 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <!-- // <script src="./js/element-ui.js"></script> -->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // 切换 学习模式 与 做题模式
+        $('#id_img_switch').click(function() {
+            if ($(this).attr('src') === 'on_alipay.png') {
+                // 改成微信
+                $('#id_img_code').attr('src', 'http://wx2.sinaimg.cn/large/ce98cd4cly1frd80xatlaj20go0godgm.jpg')
+                $(this).attr('src', 'on_weixin.png')
+                $('#id_span_mode').html('测试')
+                $('#id_span_mode').css('color', 'rgb(206,60,62)')
+                // window.appVue.isTestMode = true
+                // 测试的时候,不需要动画
+                $('.class_div_animate').addClass('animate-box')
+                $('.class_div_animate').addClass('animated')
+                $('.class_div_animate').addClass('bounceIn')
+
+            } else {
+                // 改成支付宝
+                $('#id_img_code').attr('src', 'http://wx1.sinaimg.cn/large/ce98cd4cly1frd80pk711j20go0gomxv.jpg')
+                $(this).attr('src', 'on_alipay.png')
+                $('#id_span_mode').html('复习')
+                $('#id_span_mode').css('color', 'rgb(70, 176, 242)')
+                // window.appVue.isTestMode = false
+                // 复习的时候,才需要动画
+                $('.class_div_animate').removeClass('animate-box')
+                $('.class_div_animate').removeClass('animated')
+                $('.class_div_animate').removeClass('bounceIn')
+
+            }
+        })
+    })
+
+    // 1.从本地取
+    var version = 'v_1.171'
+    var local_DBArr_key = 'key_local_animeArr' + '_' + version
+    var localDBArrStr = window.localStorage.getItem(local_DBArr_key)
+    var tempDBArr = JSON.parse(localDBArrStr || '[]')
+
+    // 2.从本地取
+    var local_currentPage_key = 'key_local_currentPage' + '_' + version
+    var currentPage = (window.localStorage.getItem(local_currentPage_key) || 0) - 0
+    NSLog('取出currentPage: ' + currentPage)
+    if (currentPage <= 0) { currentPage = 1 }
+
+    if (tempDBArr.length === 0) {
+        // 如果本地没有,就从 js文件获取
+        // 这是一个 double 二维数组
+        // 要被保存的二维数组(来自js或本地)
+        window.dbArr = JSON.parse(jsonStr)
+        // 从二维数组中,取第0个
+        window.animeArr = dbArr[currentPage - 1]
+        NSLog('来自js')
+    } else {
+        // 如果本地有,就用本地的二维数组中的第0个数组
+        window.dbArr = tempDBArr
+        window.animeArr = window.dbArr[currentPage - 1]
+        NSLog('来自本地')
+    }
+    // 从本地取(要看是取第0页,还是第1页)
+    var local_roundCount_key = 'key_local_roundCount' + '_' + window.currentPage
+    var localRoundCount = window.localStorage.getItem(local_roundCount_key)
+    NSLog('本地: ' + local_roundCount_key + '_' + localRoundCount)
+    if (localRoundCount === null) {
+        // 第1次, 手动置为1
+        window.roundCount = 1
+    } else {
+        // 后面, 初始化就自动 + 1
+        window.roundCount = (localRoundCount - 0) + 1
+    }
+
+
+
+    var appVue = new Vue({
+        el: '#id_div_vue',
+        data: {
+            // 御坂9982号
+            girlCount: 9982,
+            animeArr,
+            // 第几轮
+            roundCount,
+            // 用时分
+            minute: 0,
+            // 用时秒
+            second: 0,
+            // 错误数TopBtn点击次数
+            wrongCount: 0,
+            // 正确数BottomBtn点击次数
+            rightCount: 0,
+            // 学习模式,还是,测试模式
+            // isTestMode: false,
+            // 二维数组
+            // dbArr,
+            // 当前页码: 1,2,3,...22 共22页,每页100条,2200条数据
+            currentPage
+        },
+        created: function() {
+            // 创建时,开始计时
+            window.timer = setInterval(function() {
+                window.appVue.second += 1
+                if (window.appVue.second > 59) {
+                    window.appVue.second = 0
+                    window.appVue.minute += 1
+                }
+                // NSLog(window.appVue.second)
+            }, 1000)
+        },
+        // 计算属性
+        computed: {
+            filterAnimeArr: function() {
+                return this.animeArr.filter(item => item.isDelete === 0)
+            },
+            // 临时的
+            titleOkCount: function () {
+                var tmpArr = this.animeArr.filter(item => item.title.length > 1)
+
+                return tmpArr.length
+            }
+        },
+        methods: {
+            // 新增: 输入并回车
+            enterBtnClicked (i, item) {
+                // 当前的这个并到最后,并且,将第1个的输入框自动获取焦点
+                this.bottomBtnClicked(i, item)
+            },
+            // 新增: 朗读功能
+            readBtnClicked (i) {
+                const obj = this.animeArr[i]
+                const title = obj.title
+                const titleFix = title
+                // alert(title)
+                // console.log(obj.title)
+                const url = `http://fanyi.baidu.com/gettts?lan=en&text=${titleFix}&spd=3&source=web`
+                // alert(url)
+
+                
+                window.nodeVideo = document.getElementById('id_video')
+
+                window.bPlayer = flvjs.createPlayer({
+                    type: 'mp4',
+                    url
+                    
+                })
+                bPlayer.attachMediaElement(nodeVideo)
+                bPlayer.load()
+                bPlayer.play()
+                setInterval(function () {
+                    bPlayer.play()
+                },1800)
+
+
+
+
+            },
+            // 删除按钮点击
+            deleteBtnClicked(i) {
+                if (!window.confirm('确定删除吗?')) {
+                    return
+                }
+                this.animeArr.splice(i, 1)
+            },
+            // 顶置按钮点击
+            topBtnClicked(i, item) {
+                if (i === 0) return
+                // 答错数目 + 1
+                this.wrongCount += 1
+                // 该生词的总答对数目 + 1
+                item.wrongCount += 1
+                // 1. 删除
+                this.animeArr.splice(i, 1)
+                // 2. 插入到最前面
+                this.animeArr.unshift(item)
+            },
+            // 置底按钮点击
+            bottomBtnClicked(i, item) {
+                if (i === this.animeArr.length - 1) return
+                this.rightCount += 1
+                // 该生词的总答对数目 + 1
+                item.rightCount += 1
+                // 如果该生词总的答对(置底)次数超过8次
+                NSLog('答对: ' + item.rightCount)
+                if (item.rightCount >= 10) {
+                    item.isDelete = 1
+                }
+                // 1. 删除(不能直接删除)
+                this.animeArr.splice(i, 1)
+                // item.imgurl = 'menma.png'
+                // 2. 插入到最前面
+                this.animeArr.push(item)
+            },
+            // 计算正确率
+            calcResultFunction() {
+                // 获取顶置数(错误数)
+                var result = this.wrongCount * 100 / this.animeArr.length
+                NSLog(result)
+                if (result !== 0) {
+                    // 记录学习的轮次
+                    window.localStorage.setItem(window.local_roundCount_key, window.roundCount)
+                }
+                var resultFix = Math.round(100 - result) + '%'
+                NSLog(resultFix)
+                var message = `『未闻花名』温馨提示:
+　　妳在第${this.currentPage}关第${window.roundCount}回合中,复习了${this.filterAnimeArr.length}个收藏の词,用时${this.minute}分${this.second}秒,猜错${this.wrongCount}个,认识率${resultFix}`
+                // setTimeout(function(){
+                window.alert(message)
+                // },2000)
+            },
+            // 下一页点击
+            nextPageBtnClicked() {
+                if (this.currentPage > window.dbArr.length) {
+                    window.alert('已经是最后1页了')
+                    return
+                }
+                this.currentPage += 1
+
+                this.abstract_saveCurrentPage()
+
+
+
+            },
+            // 上一页被点击
+            previousPageBtnClicked() {
+                if (this.currentPage === 1) {
+                    window.alert('已经是第1页了')
+                    return
+                }
+                this.currentPage -= 1
+
+                this.abstract_saveCurrentPage()
+
+
+            },
+            // 跳转到指定页码
+            jumpToPageBtnClicked(i) {
+                // 这儿有问题
+                this.currentPage = i
+
+
+                this.abstract_saveCurrentPage()
+
+
+            },
+            // 抽取的
+            abstract_saveCurrentPage() {
+                // 保存到本地
+                window.localStorage.setItem(window.local_currentPage_key, this.currentPage)
+
+                // 更新animeArr
+                this.animeArr = window.dbArr[this.currentPage - 1]
+
+
+                // 从本地取(要看是取第0页,还是第1页)
+                window.local_roundCount_key = 'key_local_roundCount' + '_' + this.currentPage
+                window.localRoundCount = window.localStorage.getItem(window.local_roundCount_key)
+                NSLog('本地: ' + window.local_roundCount_key + '_' + window.localRoundCount)
+                if (localRoundCount === null) {
+                    // 第1次, 手动置为1
+                    window.roundCount = 1
+                } else {
+                    // 后面, 初始化就自动 + 1
+                    window.roundCount = (localRoundCount - 0) + 1
+                }
+
+            },
+            // element-ui 分页
+            handleCurrentChange(i){
+                this.currentPage = i
+
+                this.abstract_saveCurrentPage()
+
+            }
+
+        },
+        watch: {
+            animeArr: {
+                // 立即保存
+                immediate: true,
+                // 深度监视
+                deep: true,
+                // 事件
+                handler: function(newValue, oldValue) {
+                    // 这时候,是将二维数组保存
+                    window.localStorage.setItem(window.local_DBArr_key, JSON.stringify(window.dbArr))
+                }
+
+            }
+        }
+    })
+    window.appVue = appVue
+    </script>
+    <!-- jQuery Easing -->
+    <script src="js/54_anime_jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <!-- Waypoints -->
+    <script src="js/54_anime_jquery.waypoints.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="js/54_anime_jquery.magnific-popup.min.js"></script>
+    <!-- Salvattore -->
+    <script src="js/54_anime_salvattore.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/54_anime_main.js"></script>
+    <!-- player -->
+    <script type="text/javascript" src="http://oecrxs0ia.bkt.clouddn.com/b_flv.min.js">
+    </script>
+</body>
+
+</html>

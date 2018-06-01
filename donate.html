@@ -1,0 +1,116 @@
+<!DOCTPYE html>
+<html>
+<head>
+<!-- 下面这是未闻花名(vwhm.net)SEO有关的,暂时先不用管 -->
+
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="5000;url=http://vwhm.net/html/blog/index.html#/blog/htmlbeginner">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, 
+initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+<!-- 上面的meta必须放在最前面!!! -->
+
+    <link rel="icon" href="/beyond.jpg" type="image/x-icon"/>
+    <meta name="author" content="beyond">
+    <meta http-equiv="refresh" content="520">
+    <meta name="description" content="未闻花名-免费零基础教程-beyond出品">
+    <meta name="keywords" content="HTML,CSS,JAVASCRIPT,JQUERY,XML,JSON,C,C++,C#,OC,PHP,JAVA,JSP,PYTHON,RUBY,PERL,LUA,SQL,LINUX,SHELL,汇编,日语,英语,泰语,韩语,俄语,粤语,阿语,魔方,乐理,动漫,PR,PS,AI,AE">
+    <title>beyondの心中の动漫神作</title>
+    <link rel="stylesheet" type="text/css" href="/css/beyondbasestylewhite5.css">
+
+    <!--[if lt IE 9]>
+        <script src="//apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+  
+    <style type="text/css">  
+        body{  
+            font-size: 100%;  
+            /*background-image: url("sakura4.png");  
+            background-repeat: no-repeat;  
+            background-position: center center;  */
+            /*声明margin和padding是个好习惯*/  
+            margin: 0;  
+            padding: 0; 
+        }
+        div.class_div_container {
+            /*div居中*/
+            margin: 0 auto;
+            /*跟图片一样宽*/
+            width: 250px;
+            background-color: white;
+            /*卡片阴影专业特效*/
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        div.class_div_content {
+            text-align: center;
+            padding: 10px 10px;
+        }
+        p.class_div_p {
+            /*去掉p顶部和底部默认的空行*/
+            padding: 0px;
+            display: inline;
+        }
+    </style>  
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6089737704690620",
+    enable_page_level_ads: true
+  });
+</script>
+    </head>  
+  
+<body>  
+    <img id="id_img_switch" style="position:absolute;right:6px;top:3px;" src="on_alipay_2.png" width="64px" />
+    <h1 style="margin:0 auto;text-align:center;color:white;text-shadow:2px 2px 4px #000;letter-spacing:5px;" class="sgcontentcolor sgcenter">  
+        感恩有您
+    </h1>  
+    <br/>
+    <div class="class_div_container">
+        <img id="id_img_code" src="http://wx1.sinaimg.cn/large/ce98cd4cly1frd80pk711j20go0gomxv.jpg" alt="支付宝" width="250" />
+        <div class="class_div_content">
+            <p id="id_p_code_description" class="class_div_p">使用支付宝打赏</p>
+        </div>
+    </div>
+    <!-- <br/>
+    <div class="class_div_container">
+        <img src="http://wx2.sinaimg.cn/large/ce98cd4cly1frd80xatlaj20go0godgm.jpg" alt="微信" width="250" />
+        <div class="class_div_content">
+            <p class="class_div_p">使用微信</p>
+        </div>
+    </div> -->
+    <br/>
+    <p class="sgcontentcolor sgcenter" style="clear:left;text-align:center;">
+        感谢您的支持，一绪に頑張りましょう！
+    </p>
+    <footer id="copyright" style="clear:both;">  
+        <p style="font-size:14px;text-align:center;font-style:italic;">  
+        Copyright © <a id="author">2018</a> Powered by <a id="author">beyond</a>  
+        </p>        
+    </footer>   
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // alert('ready')
+            $('#id_img_switch').click(function () {
+                // console.log('aaaaaaaa')
+                if($(this).attr('src') === 'on_alipay_2.png'){
+                    // 改成微信
+                    $('#id_img_code').attr('src','http://wx2.sinaimg.cn/large/ce98cd4cly1frd80xatlaj20go0godgm.jpg')
+                    $('#id_p_code_description').html('使用微信打赏')
+                    $(this).attr('src','on_weixin_2.png')
+                }else{
+                    // 改成支付宝
+                    $('#id_img_code').attr('src','http://wx1.sinaimg.cn/large/ce98cd4cly1frd80pk711j20go0gomxv.jpg')
+                    $('#id_p_code_description').html('使用支付宝打赏')
+                    $(this).attr('src','on_alipay_2.png')
+                }
+                
+            })
+            
+        })
+    </script>
+</body>  
+</html>  
